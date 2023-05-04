@@ -1,0 +1,261 @@
+
+.BazTh_ico {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'Bazingas_icon' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.BazTh_ico:before {
+	position: relative;
+	top: -1px;
+}
+
+
+.BazTh_ico_postgis_book:before {
+  content: "\e94f";
+}
+.BazTh_ico_savoie:before {
+  content: "\e94d";
+}
+.BazTh_ico_swiss:before {
+  content: "\e94e";
+}
+.BazTh_ico_postgis:before {
+  content: "\e94c";
+}
+.BazTh_ico_tachometer:before {
+  content: "\e949";
+}
+.BazTh_ico_gdal:before {
+  content: "\e948";
+}
+.BazTh_ico_mug_reverse:before {
+  content: "\e947";
+}
+.BazTh_ico_mug:before {
+  content: "\e946";
+}
+.BazTh_ico_cross:before {
+  content: "\e945";
+}
+.BazTh_ico_grid:before {
+  content: "\e942";
+}
+.BazTh_ico_block_square:before {
+  content: "\e943";
+}
+.BazTh_ico_block_list:before {
+  content: "\e944";
+}
+.BazTh_ico_gear_2:before {
+  content: "\e940";
+}
+.BazTh_ico_gear:before {
+  content: "\e941";
+}
+.BazTh_ico_signal_5:before {
+  content: "\e936";
+}
+.BazTh_ico_signal_4:before {
+  content: "\e937";
+}
+.BazTh_ico_signal_3:before {
+  content: "\e938";
+}
+.BazTh_ico_signal_2:before {
+  content: "\e939";
+}
+.BazTh_ico_signal_1:before {
+  content: "\e93a";
+}
+.BazTh_ico_enveloppe_light:before {
+  content: "\e93b";
+}
+.BazTh_ico_calendar_day_light:before {
+  content: "\e93c";
+}
+.BazTh_ico_award_light:before {
+  content: "\e93d";
+}
+.BazTh_ico_clock_light:before {
+  content: "\e93e";
+}
+.BazTh_ico_stopwatch_light:before {
+  content: "\e93f";
+}
+.BazTh_ico_calendar_light:before {
+  content: "\e92e";
+}
+.BazTh_ico_link_light:before {
+  content: "\e92f";
+}
+.BazTh_ico_search:before {
+  content: "\e930";
+}
+.BazTh_ico_angry_light:before {
+  content: "\e931";
+}
+.BazTh_ico_page_light:before {
+  content: "\e932";
+}
+.BazTh_ico_newspaper_light:before {
+  content: "\e933";
+}
+.BazTh_ico_chevron_right_block:before {
+  content: "\e934";
+}
+.BazTh_ico_chevron_right_light:before {
+  content: "\e935";
+}
+.BazTh_ico_fme:before {
+  content: "\e900";
+}
+.BazTh_ico_html:before {
+  content: "\e901";
+}
+.BazTh_ico_archive_block:before {
+  content: "\e902";
+}
+.BazTh_ico_archive_light:before {
+  content: "\e903";
+}
+.BazTh_ico_bash:before {
+  content: "\e904";
+}
+.BazTh_ico_code:before {
+  content: "\e905";
+}
+.BazTh_ico_computer:before {
+  content: "\e906";
+}
+.BazTh_ico_copy:before {
+  content: "\e907";
+}
+.BazTh_ico_css:before {
+  content: "\e908";
+}
+.BazTh_ico_database_block:before {
+  content: "\e909";
+}
+.BazTh_ico_database_light:before {
+  content: "\e90a";
+}
+.BazTh_ico_external_block:before {
+  content: "\e90b";
+}
+.BazTh_ico_external_light:before {
+  content: "\e90c";
+}
+.BazTh_ico_folder_open_block:before {
+  content: "\e90d";
+}
+.BazTh_ico_folder_open_light:before {
+  content: "\e90e";
+}
+.BazTh_ico_heart_block:before {
+  content: "\e90f";
+}
+.BazTh_ico_heart_light:before {
+  content: "\e910";
+}
+.BazTh_ico_home_block:before {
+  content: "\e911";
+}
+.BazTh_ico_home_light:before {
+  content: "\e912";
+}
+.BazTh_ico_id_card_block:before {
+  content: "\e913";
+}
+.BazTh_ico_id_card_light:before {
+  content: "\e914";
+}
+.BazTh_ico_javascript:before {
+  content: "\e915";
+}
+.BazTh_ico_layer_block:before {
+  content: "\e916";
+}
+.BazTh_ico_layer_light:before {
+  content: "\e917";
+}
+.BazTh_ico_linux:before {
+  content: "\e918";
+}
+.BazTh_ico_map_block:before {
+  content: "\e919";
+}
+.BazTh_ico_map_light:before {
+  content: "\e91a";
+}
+.BazTh_ico_menu_block:before {
+  content: "\e91b";
+}
+.BazTh_ico_menu_light:before {
+  content: "\e91c";
+}
+.BazTh_ico_oracle:before {
+  content: "\e91d";
+}
+.BazTh_ico_php:before {
+  content: "\e91e";
+}
+.BazTh_ico_postgresql:before {
+  content: "\e91f";
+}
+.BazTh_ico_python:before {
+  content: "\e920";
+}
+.BazTh_ico_qgis:before {
+  content: "\e921";
+}
+.BazTh_ico_server_block:before {
+  content: "\e922";
+}
+.BazTh_ico_server_light:before {
+  content: "\e923";
+}
+.BazTh_ico_tag_block:before {
+  content: "\e924";
+}
+.BazTh_ico_tag_light:before {
+  content: "\e925";
+}
+.BazTh_ico_tags_block:before {
+  content: "\e926";
+}
+.BazTh_ico_tags_light:before {
+  content: "\e927";
+}
+.BazTh_ico_user_block:before {
+  content: "\e928";
+}
+.BazTh_ico_user_circle_block:before {
+  content: "\e929";
+}
+.BazTh_ico_user_circle_light:before {
+  content: "\e92a";
+}
+.BazTh_ico_user_light:before {
+  content: "\e92b";
+}
+.BazTh_ico_windows:before {
+  content: "\e92c";
+}
+.BazTh_ico_wordpress:before {
+  content: "\e92d";
+}
+.BazTh_ico_linkedin-square:before {
+  content: "\e94a";
+}
+.BazTh_ico_linkedin:before {
+  content: "\e94b";
+}

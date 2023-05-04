@@ -1,0 +1,1561 @@
+/* Style CSS de l'éditeur de post */
+/* Date et heure de génération du fichier : 04.05.2023, 12:31:16 */
+
+/* Fichier CSS : 0.1_police.css */
+/* Police */
+
+/*
+	100 	Thin (Hairline)
+	200 	Extra Light (Ultra Light)
+	300 	Light
+	400 	Normal
+	500 	Medium
+	600 	Semi Bold (Demi Bold)
+	700 	Bold
+	800 	Extra Bold (Ultra Bold)
+	900 	Black (Heavy)
+*/
+
+
+/* Victor Mono */
+/* Police de code */
+@font-face {
+	font-family: 'VictorMono';
+	font-style: normal;
+	font-weight: 100;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-Thin.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-Thin.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'VictorMono';
+	font-style: italic;
+	font-weight: 100;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-ThinItalic.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-ThinItalic.woff') format('woff');
+}
+
+/*
+@font-face {
+	font-family: 'VictorMono';
+	font-style: oblique;
+	font-weight: 100;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-ThinOblique.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-ThinOblique.woff') format('woff');
+}
+*/
+
+/*
+@font-face {
+	font-family: 'VictorMono';
+	font-style: normal;
+	font-weight: 200;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-ExtraLight.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-ExtraLight.woff') format('woff');
+}
+*/
+
+/*
+@font-face {
+	font-family: 'VictorMono';
+	font-style: italic;
+	font-weight: 200;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-ExtraLightItalic.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-ExtraLightItalic.woff') format('woff');
+}
+*/
+
+/*
+@font-face {
+	font-family: 'VictorMono';
+	font-style: oblique;
+	font-weight: 200;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-ExtraLightOblique.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-ExtraLightOblique.woff') format('woff');
+}
+*/
+
+/*
+@font-face {
+	font-family: 'VictorMono';
+	font-style: normal;
+	font-weight: 300;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-Light.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-Light.woff') format('woff');
+}
+*/
+
+/*
+@font-face {
+	font-family: 'VictorMono';
+	font-style: italic;
+	font-weight: 300;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-LightItalic.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-LightItalic.woff') format('woff');
+}
+*/
+
+/*
+@font-face {
+	font-family: 'VictorMono';
+	font-style: oblique;
+	font-weight: 300;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-LightOblique.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-LightOblique.woff') format('woff');
+}
+*/
+
+@font-face {
+	font-family: 'VictorMono';
+	font-style: normal;
+	font-weight: 400;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-Regular.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'VictorMono';
+	font-style: italic;
+	font-weight: 400;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-Italic.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-Italic.woff') format('woff');
+}
+
+/*
+@font-face {
+	font-family: 'VictorMono';
+	font-style: oblique;
+	font-weight: 400;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-Oblique.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-Oblique.woff') format('woff');
+}
+*/
+
+/*
+@font-face {
+	font-family: 'VictorMono';
+	font-style: normal;
+	font-weight: 500;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-Medium.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-Medium.woff') format('woff');
+}
+*/
+
+/*
+@font-face {
+	font-family: 'VictorMono';
+	font-style: italic;
+	font-weight: 500;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-MediumItalic.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-MediumItalic.woff') format('woff');
+}
+*/
+
+/*
+@font-face {
+	font-family: 'VictorMono';
+	font-style: oblique;
+	font-weight: 500;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-MediumOblique.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-MediumOblique.woff') format('woff');
+}
+*/
+
+/*
+@font-face {
+	font-family: 'VictorMono';
+	font-style: normal;
+	font-weight: 600;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-SemiBold.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-SemiBold.woff') format('woff');
+}
+*/
+
+/*
+@font-face {
+	font-family: 'VictorMono';
+	font-style: italic;
+	font-weight: 600;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-SemiBoldItalic.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-SemiBoldItalic.woff') format('woff');
+}
+*/
+
+/*
+@font-face {
+	font-family: 'VictorMono';
+	font-style: oblique;
+	font-weight: 600;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-SemiBoldOblique.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-SemiBoldOblique.woff') format('woff');
+}
+*/
+
+@font-face {
+	font-family: 'VictorMono';
+	font-style: normal;
+	font-weight: 700;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-Bold.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'VictorMono';
+	font-style: italic;
+	font-weight: 700;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-BoldItalic.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-BoldItalic.woff') format('woff');
+}
+
+/*
+@font-face {
+	font-family: 'VictorMono';
+	font-style: oblique;
+	font-weight: 700;
+	src: url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-BoldOblique.woff2') format('woff2'),
+		 url('https://ressource.arthurbazin.com/librairie/font/VictorMono/VictorMono-BoldOblique.woff') format('woff');
+}
+*/
+
+
+
+/* Bazingas icons */
+/* Police des icones */
+@font-face {
+	font-family: 'Bazingas_icon';
+	font-style: normal;
+	font-weight: normal;
+	font-display: block;
+	src: url('https://ressource.arthurbazin.com/librairie/font/Bazingas_icon/Bazingas_icon.eot?kujknj');
+	src: url('https://ressource.arthurbazin.com/librairie/font/Bazingas_icon/Bazingas_icon.eot?kujknj#iefix') format('embedded-opentype'),
+		 url('https://ressource.arthurbazin.com/librairie/font/Bazingas_icon/Bazingas_icon.woff?kujknj') format('woff'),
+		 url('https://ressource.arthurbazin.com/librairie/font/Bazingas_icon/Bazingas_icon.ttf?kujknj') format('truetype'),
+		 url('https://ressource.arthurbazin.com/librairie/font/Bazingas_icon/Bazingas_icon.svg?kujknj#Bazingas_icon') format('svg');
+  }
+
+/* *********************************************************************************************************************************** */
+
+
+/* Fichier CSS : 0.2_police_bazingas_icon.css */
+
+.BazTh_ico {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'Bazingas_icon' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.BazTh_ico:before {
+	position: relative;
+	top: -1px;
+}
+
+
+.BazTh_ico_postgis_book:before {
+  content: "\e94f";
+}
+.BazTh_ico_savoie:before {
+  content: "\e94d";
+}
+.BazTh_ico_swiss:before {
+  content: "\e94e";
+}
+.BazTh_ico_postgis:before {
+  content: "\e94c";
+}
+.BazTh_ico_tachometer:before {
+  content: "\e949";
+}
+.BazTh_ico_gdal:before {
+  content: "\e948";
+}
+.BazTh_ico_mug_reverse:before {
+  content: "\e947";
+}
+.BazTh_ico_mug:before {
+  content: "\e946";
+}
+.BazTh_ico_cross:before {
+  content: "\e945";
+}
+.BazTh_ico_grid:before {
+  content: "\e942";
+}
+.BazTh_ico_block_square:before {
+  content: "\e943";
+}
+.BazTh_ico_block_list:before {
+  content: "\e944";
+}
+.BazTh_ico_gear_2:before {
+  content: "\e940";
+}
+.BazTh_ico_gear:before {
+  content: "\e941";
+}
+.BazTh_ico_signal_5:before {
+  content: "\e936";
+}
+.BazTh_ico_signal_4:before {
+  content: "\e937";
+}
+.BazTh_ico_signal_3:before {
+  content: "\e938";
+}
+.BazTh_ico_signal_2:before {
+  content: "\e939";
+}
+.BazTh_ico_signal_1:before {
+  content: "\e93a";
+}
+.BazTh_ico_enveloppe_light:before {
+  content: "\e93b";
+}
+.BazTh_ico_calendar_day_light:before {
+  content: "\e93c";
+}
+.BazTh_ico_award_light:before {
+  content: "\e93d";
+}
+.BazTh_ico_clock_light:before {
+  content: "\e93e";
+}
+.BazTh_ico_stopwatch_light:before {
+  content: "\e93f";
+}
+.BazTh_ico_calendar_light:before {
+  content: "\e92e";
+}
+.BazTh_ico_link_light:before {
+  content: "\e92f";
+}
+.BazTh_ico_search:before {
+  content: "\e930";
+}
+.BazTh_ico_angry_light:before {
+  content: "\e931";
+}
+.BazTh_ico_page_light:before {
+  content: "\e932";
+}
+.BazTh_ico_newspaper_light:before {
+  content: "\e933";
+}
+.BazTh_ico_chevron_right_block:before {
+  content: "\e934";
+}
+.BazTh_ico_chevron_right_light:before {
+  content: "\e935";
+}
+.BazTh_ico_fme:before {
+  content: "\e900";
+}
+.BazTh_ico_html:before {
+  content: "\e901";
+}
+.BazTh_ico_archive_block:before {
+  content: "\e902";
+}
+.BazTh_ico_archive_light:before {
+  content: "\e903";
+}
+.BazTh_ico_bash:before {
+  content: "\e904";
+}
+.BazTh_ico_code:before {
+  content: "\e905";
+}
+.BazTh_ico_computer:before {
+  content: "\e906";
+}
+.BazTh_ico_copy:before {
+  content: "\e907";
+}
+.BazTh_ico_css:before {
+  content: "\e908";
+}
+.BazTh_ico_database_block:before {
+  content: "\e909";
+}
+.BazTh_ico_database_light:before {
+  content: "\e90a";
+}
+.BazTh_ico_external_block:before {
+  content: "\e90b";
+}
+.BazTh_ico_external_light:before {
+  content: "\e90c";
+}
+.BazTh_ico_folder_open_block:before {
+  content: "\e90d";
+}
+.BazTh_ico_folder_open_light:before {
+  content: "\e90e";
+}
+.BazTh_ico_heart_block:before {
+  content: "\e90f";
+}
+.BazTh_ico_heart_light:before {
+  content: "\e910";
+}
+.BazTh_ico_home_block:before {
+  content: "\e911";
+}
+.BazTh_ico_home_light:before {
+  content: "\e912";
+}
+.BazTh_ico_id_card_block:before {
+  content: "\e913";
+}
+.BazTh_ico_id_card_light:before {
+  content: "\e914";
+}
+.BazTh_ico_javascript:before {
+  content: "\e915";
+}
+.BazTh_ico_layer_block:before {
+  content: "\e916";
+}
+.BazTh_ico_layer_light:before {
+  content: "\e917";
+}
+.BazTh_ico_linux:before {
+  content: "\e918";
+}
+.BazTh_ico_map_block:before {
+  content: "\e919";
+}
+.BazTh_ico_map_light:before {
+  content: "\e91a";
+}
+.BazTh_ico_menu_block:before {
+  content: "\e91b";
+}
+.BazTh_ico_menu_light:before {
+  content: "\e91c";
+}
+.BazTh_ico_oracle:before {
+  content: "\e91d";
+}
+.BazTh_ico_php:before {
+  content: "\e91e";
+}
+.BazTh_ico_postgresql:before {
+  content: "\e91f";
+}
+.BazTh_ico_python:before {
+  content: "\e920";
+}
+.BazTh_ico_qgis:before {
+  content: "\e921";
+}
+.BazTh_ico_server_block:before {
+  content: "\e922";
+}
+.BazTh_ico_server_light:before {
+  content: "\e923";
+}
+.BazTh_ico_tag_block:before {
+  content: "\e924";
+}
+.BazTh_ico_tag_light:before {
+  content: "\e925";
+}
+.BazTh_ico_tags_block:before {
+  content: "\e926";
+}
+.BazTh_ico_tags_light:before {
+  content: "\e927";
+}
+.BazTh_ico_user_block:before {
+  content: "\e928";
+}
+.BazTh_ico_user_circle_block:before {
+  content: "\e929";
+}
+.BazTh_ico_user_circle_light:before {
+  content: "\e92a";
+}
+.BazTh_ico_user_light:before {
+  content: "\e92b";
+}
+.BazTh_ico_windows:before {
+  content: "\e92c";
+}
+.BazTh_ico_wordpress:before {
+  content: "\e92d";
+}
+.BazTh_ico_linkedin-square:before {
+  content: "\e94a";
+}
+.BazTh_ico_linkedin:before {
+  content: "\e94b";
+}
+
+/* *********************************************************************************************************************************** */
+
+
+/* Fichier CSS : 0_variables.css */
+/* Variables CSS */
+
+:root {
+	/* Couleurs */
+		/* Base */
+			--color_bleu_dodger: #0090FF;	/* rgb(0, 144, 255) */
+			--color_violet_electric: #9000FF;	/* rgb(144, 0, 255) */
+			--color_violet_fonce: #240B36;	/* rgb(36, 11, 54) */
+			--color_orange: #FF9000;	/* rgb(255, 144, 0) */
+			--color_rose: #FF0090;	/* rgb(255, 0, 144) */
+			--color_rouge: #FF1E1E;	/* rgb(255, 30, 30) */
+			--color_rouge_rose: #C31432;	/* rgb(195, 20, 50) */
+			--color_vert_jaune: #90FF00;	/* rgb(144, 255, 0) */
+			--color_vert_clair: #00FF90;	/* rgb(0, 255, 144) */
+			--color_vert_fonce: #007070;	/* rgb (0, 112, 112) */
+			--color_noir: #000000;	/* rgb(0, 0, 0) */
+			--color_gris_tres_clair: #F0F0FF;	/* rgb(240, 240, 255) */
+			--color_gris_clair: #D2D2DC;	/* rgb (210, 210, 220) */
+			--color_gris: #B4B4BF;	/* rgb (180, 180, 191) */
+			--color_gris_moyen: #808092;	/* rgb (128, 128, 146) */
+			--color_gris_peu_fonce: #6C6B75;	/* rgb (108, 107, 117) */
+			--color_gris_fonce: #24232D;	/* rgb (36, 35, 45) */
+		/* Gradient */
+			/* #C31432 => #240B36 */
+			/* #C31432 => #9000FF */
+		/* Thème */
+			--main_color_theme: var(--color_bleu_dodger);
+			--main_darkmode_color: var(--color_gris_fonce);
+
+
+
+	/* Eléments */
+		/* Général */
+			--txt_body_font_family: "Quicksand", sans-serif;
+			--txt_body_font_size: 0.9em;
+			--txt_body_text_color: var(--color_gris_fonce);
+			--txt_body_darkmode_text_color: var(--color_gris_tres_clair);
+			--background_body_color: #FFFFFF;
+			--background_body_color_00: #FFFFFF00;
+			--background_body_color_22: #FFFFFF22;
+			--background_body_color_EE: #FFFFFFEE;
+			--background_body_darkmode_color: var(--main_darkmode_color);
+			--background_body_darkmode_color_00: #24232D00;
+			--background_body_darkmode_color_22: #24232D22;
+			--background_body_darkmode_color_88: #24232D88;
+
+		/* Header */
+			--header_border_color: var(--color_gris_tres_clair);
+			--header_darkmode_border_color: var(--color_gris_peu_fonce);
+			/* Image */
+				--header_image: url(http://blog.arthurbazin.local/wp-content/themes/bazingas/media/header_background.jpg);
+				--header_linear_gradient: ;
+			/* Titre du site */
+				--txt_site_title_font_family: "Megrim", cursive;
+				--txt_site_title_font_size: 36px;
+				--txt_site_title_text_color: var(--txt_body_text_color);
+			/* Recherche */
+				--header_search_text_color: #000;
+				--header_search_icon_color: #000;
+				--header_search_darkmode_text_color: #fff;
+				--header_search_darkmode_icon_color: #fff;
+
+		/* Menu principal */
+			--main_menu_border_color: var(--header_border_color);
+			--main_menu_darkmode_border_color: var(--header_darkmode_border_color);
+			--main_menu_item_separator_color: var(--header_border_color);
+			--main_menu_darkmode_item_separator_color: var(--header_darkmode_border_color);
+			--main_menu_item_hover_default_color: var(--main_color_theme);
+			--main_menu_item_text_hover_color: #FFFFFF;
+			--menu_main_item_font_size: 11.5px;
+			--menu_main_item_icon_font_size: 18px;
+
+		/* Corps principal (main) */
+			--main_background_color: #F0F0FF;
+			--main_background_gradient: linear-gradient(135deg, #FFF, #F0F0FF);
+			--main_background_darkmode_color: var(--main_darkmode_color);
+			--main_background_darkmode_gradient: linear-gradient(135deg, #1A1922, #15141C);
+			/* Contenu */
+				--main_content_background_color: #F0F0FF;
+				--main_content_background_gradient: linear-gradient(135deg, #FFF, #F0F0FF);
+			/* Titre des pages */
+				--txt_page_title_font_family: "Megrim", cursive;
+				--txt_page_title_font_size: 28px;
+				--txt_page_title_font_size_mobile: 20px;
+				--txt_page_title_text_color: #FFFFFF;
+				--main_title_page_color_default: var(--main_color_theme);
+				--main_title_page_color_tags: #D2D2DC;
+				--main_title_option_text_color: #D2D2DC;
+			/* Contenu */
+				/* Cartes */
+					--main_content_card_img_color: var(--main_color_theme);
+					--main_content_card_img_gradient: linear-gradient(90deg, #00FF9000 60%,#00FF90), linear-gradient(270deg, #FF009000 60%,#FF0090), linear-gradient(0deg, #9000FF00 20%,#9000FF), linear-gradient(180deg, #0090FF00 20%,#0090FF);
+					--main_content_card_title_font_size: 20px;
+					--main_content_card_excerpt_font_size: 11.5px;
+					--main_content_card_detail_font_size: 11.5px;
+					--main_content_card_detail_text_color: #808092;
+					--main_content_card_tags_font_size: 11.5px;
+				/* Tags */
+					--main_content_tags_category_text_color: var(--main_color_theme);
+					--main_content_tags_category_border_color: var(--main_content_tags_category_text_color);
+					--main_content_tags_category_hover_background_color: var(--main_content_tags_category_text_color);
+					--main_content_tags_tag_text_color: var(--color_gris);
+					--main_content_tags_tag_border_color: var(--main_content_tags_tag_text_color);
+					--main_content_tags_tag_hover_background_color: var(--main_content_tags_tag_text_color);
+					--main_content_tags_hover_text_color: #FFFFFF;
+				/* Métadonnées article */
+					--main_content_meta_img_gradient: linear-gradient(90deg, #ffffffcf, #ffffff7e), linear-gradient(90deg, #fff, #FF0090, #00FF90,#0090FF, #9000FF),
+					--main_content_meta_darkmode_img_gradient: linear-gradient(90deg, #24232Dcf, #ffffff7e), linear-gradient(90deg, #24232D, #FF0090, #00FF90,#0090FF, #9000FF);
+					--main_content_meta_category_font_size: 16px;
+					--main_content_meta_tags_font_size: 10px;
+				/* Titre des paragraphes */
+					--txt_content_title_font_family: var(--txt_body_font_family);
+					--txt_content_title_text_color: var(--txt_body_text_color);
+					--txt_content_title_text_darkmode_color: var(--txt_body_darkmode_text_color);
+				/* Texte des paragraphes */
+					--txt_content_font_family: var(--txt_body_font_family);
+					--txt_content_text_color: var(--txt_body_text_color);
+					--txt_content_text_darkmode_color: var(--txt_body_darkmode_text_color);
+				/* Code */
+					--txt_code_font_family: VictorMono, "Source Code Pro", "Liberation Mono", "Courier New", Courier, monospace;
+					--txt_code_font_size: 14px;
+					--txt_code_line_height: 22px;
+				/* Table of content */
+					--txt_table_of_content_item_font_size: 15px;
+					--txt_table_of_content_item_font_size_mobile: 17px;
+					--txt_table_of_content_item_font_size_factor: 0.95em;
+				/* Formulaire */
+					--form_valid_color: #00ce68;
+					--form_invalid_color: var(--color_orange);
+					--form_failed_color: #ff6856;
+				/* Footer */
+					--main_footer_background_color: #24232D;
+					--main_footer_title_color: #FFFFFF;
+					--main_footer_text_color: #D2D2DC;
+					--main_footer_copyright_color: #808092;
+					--main_footer_copyright_font_size: 0.85em;
+				/* Progress Bar */
+					--progress_bar_font_size: 12px;
+
+	/* z-index des éléments */
+
+}
+
+
+
+
+/* *********************************************************************************************************************************** */
+
+
+/* Fichier CSS : editor_1_base.css */
+/* Fond de l'éditeur */
+
+.edit-post-visual-editor{
+	padding-top: 0px;
+}
+
+.block-editor__typewriter {
+	background-color: #ffffff;
+}
+
+.editor-post-title {
+	margin: 6px 56px 0 56px;
+	padding: 20px;
+
+	background-color: #fff;
+	box-shadow: 0 0 15px 1px #0000000d;
+}
+
+.editor-post-title__block {
+	margin-bottom: 0px;
+}
+
+.block-editor-block-list__layout {
+	margin: 20px 56px 20px 56px;
+	padding: 20px;
+
+	background-color: #fff;
+	box-shadow: 0 0 15px 1px #0000000d;
+}
+
+.block-editor-block-list__layout .block-editor-block-list__layout {
+	margin: 0;
+	padding: 0;
+
+	background-color: none;
+	box-shadow: none;
+}
+
+ul,
+.block-editor-block-list__block,
+.edit-post-visual-editor .block-editor-block-list__block {
+	margin: 10px 0 10px 0;
+}
+
+.wp-block {
+	max-width: 100%;
+}
+
+.block-editor-writing-flow .block-editor-writing-flow__click-redirect {
+	min-height: 36px;
+}
+
+.wp-block.is-selected:before,
+.wp-block.is-multi-selected:before {
+	display: block;
+	content: '';
+
+	position: absolute;
+
+	top: -3px;
+	left: -6px;
+	height: calc(100% + 6px);
+	width: calc(100% + 12px);
+
+	border-radius: 5px;
+	border: 1px dashed #b3b3b3;
+	
+	box-shadow: 0 0 10px 0 #b9b9b9;
+
+	pointer-events: none;
+}
+
+.components-popover.block-editor-block-list__insertion-point-popover.is-without-arrow {
+	margin-top: 4px;
+}
+
+
+/* *********************************************************************************************************************************** */
+
+
+/* Fichier CSS : editor_2_text.css */
+/* Style des textes du contenu principal */
+
+/* Titres de la page */
+h1 {
+	font-family: var(--txt_page_title_font_family);
+	font-weight: normal;
+}
+
+
+/* Titre des paragraphes */
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--txt_content_title_font_family);
+}
+
+h2:not(.has-text-color),
+h3:not(.has-text-color),
+h4:not(.has-text-color),
+h5:not(.has-text-color),
+h6:not(.has-text-color) {
+	color: var(--txt_content_title_text_color);
+}
+
+
+h2 {
+	display: block;
+
+	margin: 45px 0 10px 0;
+	padding-bottom: 3px;
+
+	border-bottom: 3px solid;
+	border-image-source: linear-gradient(90deg, #454353 var(--main_color_theme) var(--main_color_theme)00);
+	border-image-slice: 1;
+
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+h3 {
+	display: block;
+
+	margin: 30px 0 10px 0;
+	padding-bottom: 3px;
+
+	border-bottom: 2px solid;
+	border-image-source: linear-gradient(90deg, #454353 var(--main_color_theme) var(--main_color_theme)00);
+	border-image-slice: 1;
+
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h4 {
+	display: block;
+
+	margin: 25px 0 10px 0;
+	padding-bottom: 3px;
+
+	border-bottom: 1px solid;
+	border-image-source: linear-gradient(90deg, #454353 var(--main_color_theme) var(--main_color_theme)00);
+	border-image-slice: 1;
+
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+h5 {
+	display: block;
+
+	margin: 20px 0 10px 0;
+	padding-bottom: 3px;
+
+	border-bottom: 1px dashed #D2D2DC;
+
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+h6 {
+	display: block;
+
+	margin: 15px 0 10px 0;
+	padding-bottom: 3px;
+
+	border-bottom: 1px dotted #D2D2DC;
+
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+h2:first-child,
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6 {
+	margin-top: 0px;
+}
+
+
+
+
+/* Textes */
+p,
+ul,
+ol,
+table,
+table p,
+figure,
+blockquote,
+pre,
+.wp-block-buttons,
+div.wp-block-media-text,
+.wp-block-cover,
+.wp-block-cover-image {
+	font-family: var(--txt_content_font_family);
+}
+
+p,
+ul,
+ol,
+table,
+table p,
+figure,
+blockquote,
+pre,
+.wp-block-buttons,
+div.wp-block-media-text,
+.wp-block-cover,
+.wp-block-cover-image {
+	line-height: 1.4em;
+}
+
+div:not(.wp-block-cover__inner-container) > div > div > div > p:not(.has-text-color),
+ul,
+ol,
+table,
+table p,
+figure,
+blockquote,
+pre,
+.wp-block-buttons,
+div.wp-block-media-text,
+.wp-block-cover,
+.wp-block-cover-image {
+	color: var(--txt_content_text_color);
+}
+
+
+p,
+ul,
+ol,
+table,
+table p,
+figure,
+blockquote,
+pre,
+.wp-block-buttons,
+div.wp-block-media-text,
+.wp-block-cover,
+.wp-block-cover-image {
+	margin: 15px 0 0 0;
+
+	text-align: justify;
+}
+
+figure > blockquote {
+	margin: 0px 0 0 0;
+}
+
+p.has-background {
+	padding: 0px 0px;
+}
+
+/* Couleur personnalisées */
+.has-text-color.has-bleu-dodger-color,
+.has-inline-color.has-bleu-dodger-color {
+	color: var(--color_bleu_dodger);
+}
+.has-background.has-bleu-dodger-background-color {
+	background-color: var(--color_bleu_dodger);
+}
+
+.has-text-color.has-violet-electric-color,
+.has-inline-color.has-violet-electric-color {
+	color: var(--color_violet_electric);
+}
+.has-background.has-violet-electric-background-color {
+	background-color: var(--color_violet_electric);
+}
+
+.has-text-color.has-violet-fonce-color,
+.has-inline-color.has-violet-fonce-color {
+	color: var(--color_violet_fonce);
+}
+.has-background.has-violet-fonce-background-color {
+	background-color: var(--color_violet_fonce);
+}
+
+.has-text-color.has-orange-color,
+.has-inline-color.has-orange-color {
+	color: var(--color_orange);
+}
+.has-background.has-orange-background-color {
+	background-color: var(--color_orange);
+}
+
+.has-text-color.has-rose-color,
+.has-inline-color.has-rose-color {
+	color: var(--color_rose);
+}
+.has-background.has-rose-background-color {
+	background-color: var(--color_rose);
+}
+
+.has-text-color.has-rouge-color,
+.has-inline-color.has-rouge-color {
+	color: var(--color_rouge);
+}
+.has-background.has-rouge-background-color {
+	background-color: var(--color_rouge);
+}
+
+.has-text-color.has-rouge-rose-color,
+.has-inline-color.has-rouge-rose-color {
+	color: var(--color_rouge_rose);
+}
+.has-background.has-rouge-rose-background-color {
+	background-color: var(--color_rouge_rose);
+}
+
+.has-text-color.has-vert-jaune-color,
+.has-inline-color.has-vert-jaune-color {
+	color: var(--color_vert_jaune);
+}
+.has-background.has-vert-jaune-background-color {
+	background-color: var(--color_vert_jaune);
+}
+
+.has-text-color.has-vert-clair-color,
+.has-inline-color.has-vert-clair-color {
+	color: var(--color_vert_clair);
+}
+.has-background.has-vert-clair-background-color {
+	background-color: var(--color_vert_clair);
+}
+
+.has-text-color.has-vert-fonce-color,
+.has-inline-color.has-vert-fonce-color {
+	color: var(--color_vert_fonce);
+}
+.has-background.has-vert-fonce-background-color {
+	background-color: var(--color_vert_fonce);
+}
+
+.has-text-color.has-noir-color,
+.has-inline-color.has-noir-color {
+	color: var(--color_noir);
+}
+.has-background.has-noir-background-color {
+	background-color: var(--color_noir);
+}
+
+.has-text-color.has-gris-tres-clair-color,
+.has-inline-color.has-gris-tres-clair-color {
+	color: var(--color_gris_tres_clair);
+}
+.has-background.has-gris-tres-clair-background-color {
+	background-color: var(--color_gris_tres_clair);
+}
+
+.has-text-color.has-gris-clair-color,
+.has-inline-color.has-gris-clair-color {
+	color: var(--color_gris_clair);
+}
+.has-background.has-gris-clair-background-color {
+	background-color: var(--color_gris_clair);
+}
+
+.has-text-color.has-gris-moyen-color,
+.has-inline-color.has-gris-moyen-color {
+	color: var(--color_gris_moyen);
+}
+.has-background.has-gris-moyen-background-color {
+	background-color: var(--color_gris_moyen);
+}
+
+.has-text-color.has-gris-fonce-color,
+.has-inline-color.has-gris-fonce-color {
+	color: var(--color_gris_fonce);
+}
+.has-background.has-gris-fonce-background-color {
+	background-color: var(--color_gris_fonce);
+}
+
+
+
+/* Code en ligne */
+code {
+	font-size: 0.9em;
+}
+
+.block-editor-plain-text,
+code,
+pre.wp-block-preformatted {
+	display: inline-block;
+	max-width: 100%;
+	padding: 0px 3px 1px 3px;
+	margin: 1px 0px;
+
+	font-family: var(--txt_code_font_family);
+	font-size: var(--txt_code_font_size);
+	line-height: 1.1em;
+	letter-spacing: 1px;
+	color: #24232D;
+	word-break: break-all;
+	white-space: pre-wrap;
+
+	background-color: #F0F0FF;
+
+	border-radius: 1px;
+	border: 1px dashed #24232D;
+
+	transition: all 0.3s;
+}
+
+
+code:hover,
+pre.wp-block-preformatted:hover {
+	background-color: #FFF;
+	border-color: var(--color_gris_clair);
+
+	transition: all 0.3s;
+}
+
+
+pre.wp-block-preformatted{
+	display: block;
+
+	margin: 15px 0 0 0;
+	padding: 3px 3px 3px 3px;
+}
+
+table code {
+	font-size: 1em;
+}
+
+.enlighter-default {
+	margin: 15px 0 0 0;
+}
+
+.enlighter-block-wrapper .block-editor-plain-text {
+	background-color: #24232D;
+	color: #f8f8f2;
+
+	border-radius: 5px;
+}
+
+div[data-type="enlighter/codeblock"].is-selected .block-editor-plain-text {
+    background-color: #24232D;
+}
+
+
+
+/* Listes */
+p + ul,
+p + ol {
+	margin-top: 0px;
+}
+
+li ul,
+li ol {
+	margin-top: 0px;
+}
+
+ul li,
+ol li {
+	margin: 0 0 0 15px
+}
+
+
+
+/* Liens */
+a:not(.tags):not(.wp-block-button__link):not(.editor-post-permalink__link) {
+	position: relative;
+
+	color: #808092;
+	text-decoration: underline dashed #808092;
+
+	transition: all 0.3s;
+}
+
+a:not(.tags):not(.wp-block-button__link):not(.editor-post-permalink__link):hover {
+	text-shadow: 0px 0px 8px #808092;
+
+	color: #24232D;
+	text-decoration: underline solid #24232D;
+
+	transition: all 0.3s;
+}
+
+a[target=_blank]:not(.tags):not(.editor-post-permalink__link)::after {
+	margin: 0px 1px 0px 3px;
+
+	content: '\e90c';
+	font-family: "Bazingas_icon";
+	font-size: 0.7em;
+
+	transition: all 0.3s;
+}
+
+a:not(.tags):not(.editor-post-permalink__link):hover::before {
+	position: absolute;
+	z-index: 100;
+
+	top: -16px;
+	right: 0px;
+
+	width: max-content;
+	transform: translateX(100%);
+
+	padding: 3px 5px;
+	margin: 0px 0px 0px 0px;
+
+	border: 1px solid #808092;
+	border-radius: 3px;
+
+	background-color: #F0F0FF;;
+
+	font-size: 0.7em;
+	line-height: 12px;
+	color: #24232D;
+	text-shadow: 0 0 0 #fff;
+
+	opacity: 0.95;
+}
+
+a[target=_blank]:not(.tags):not(.editor-post-permalink__link):hover::before {
+	content: 'Dans un nouvel onglet';
+}
+
+a:not([target=_blank]):not(.tags):not(.editor-post-permalink__link):hover::before {
+	content: 'Dans l\'onglet actuel';
+}
+
+
+
+/* Eléments */
+/* Bouton */
+.wp-block-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: row;
+
+	margin-bottom: -6px;
+	margin-right: -6px;
+}
+
+.wp-block-button {
+	display: inline-block;
+
+	max-width: 100%;
+	margin: 0 6px 6px 0;
+
+	flex-grow: 1;
+}
+
+.wp-block-button div {
+	position: relative;
+	display: inline-block;
+
+	width: 100%;
+	padding: 5px 7px 5px 7px;
+
+	border-radius: 5px;
+
+	font-size: unset;
+	text-decoration: none;
+	text-align: center;
+
+	transition: all 0.3s;
+}
+
+.wp-block-button div:hover::before {
+	display: none;
+}
+
+.wp-block-button div:not(.has-text-color) {
+	color: #fff;
+
+	transition: all 0.3s;
+}
+
+.wp-block-button div:not(.has-background) {
+	background-color: var(--main_color_theme);
+
+	transition: all 0.3s;
+}
+
+.wp-block-button.vari1 div {
+	background-color: #a6d9ff;
+}
+
+.wp-block-button.vari2 div {
+	background-color: var(--color_violet_fonce);
+}
+
+.wp-block-buttons .wp-block-button div:hover {
+	background-color: var(--color_violet_electric);
+
+	color: #fff;
+
+	transition: all 0.3s;
+}
+
+.wp-block-buttons.style2 .wp-block-button div,
+.wp-block-button.style2 div {
+	background-color: #C31432;
+}
+
+.wp-block-buttons.style2 .wp-block-button.vari1 div,
+.wp-block-button.style2.vari1 div {
+	background-color: #F28193;
+}
+
+.wp-block-buttons.style2 .wp-block-button.vari2 div,
+.wp-block-button.style2.vari2 div {
+	background-color: #e10026;
+}
+
+.wp-block-buttons.style2 .wp-block-button div:hover,
+.wp-block-button.style2 div:hover {
+	background-color: #8A031A;
+
+	color: #fff;
+
+	transition: all 0.3s;
+}
+
+
+
+
+/* Styles annexes */
+/* Largeur 100% */
+.wp-block-buttons.s1-1 .wp-block-button {
+	display: block;
+
+	width: 100%;
+}
+/* Largeur 75% */
+.wp-block-buttons.s3-4 .wp-block-button {
+	width: calc( 75% - 6px);
+	flex-grow: 0;
+}
+/* Largeur 50% */
+.wp-block-buttons.s1-2 .wp-block-button {
+	width: calc( 50% );
+	flex-grow: 0;
+}
+/* Centré */
+.wp-block-buttons.center {
+	justify-content: space-evenly;
+}
+/* Aligné à gauche */
+.wp-block-buttons.left .wp-block-button div {
+	text-align: left;
+}
+/* Retour à la ligne pour caque bouton */
+.wp-block-buttons.no-flex.s1-2 .wp-block-button {
+	margin-right: 2%;
+}
+.wp-block-buttons.no-flex.s1-2.center .wp-block-button {
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+
+
+/* Citation */
+blockquote {
+	display: block;
+
+	width: 100%;
+	padding: 25px 30px calc(25px - 0.8em) 30px;
+
+	border-radius: 5px;
+
+	background-color: var(--main_color_theme);
+	background-image: linear-gradient(90deg, #24232D, var(--main_color_theme));
+
+	text-align: right;
+
+	transition: all 0.3s;
+}
+
+blockquote:hover {
+	box-shadow: 0 0 5px 0 #000;
+
+	transition: box-shadow 0.3s;
+}
+
+.wp-block-pullquote {
+	border-top: none;
+}
+
+.wp-block-pullquote blockquote p,
+blockquote.wp-block-quote p {
+	margin: 0px;
+
+	font-size: 2em;
+	color: #FFF;
+	text-align: justify;
+	line-height: 1em;
+}
+
+blockquote p:before {
+	margin-right: 10px;
+
+	content: '\f10d';
+	font-family: "FontAwesome";
+}
+
+blockquote p:after {
+	margin-left: 10px;
+
+	content: '\f10e';
+	font-family: "FontAwesome";
+}
+
+blockquote .wp-block-pullquote__citation,
+blockquote .wp-block-quote__citation {
+	margin: 0px;
+
+	font-size: 0.8em;
+	color: #F0F0FF;
+}
+
+blockquote a:not(.tags):not(.wp-block-button__link):not(.editor-post-permalink__link) {
+	color: #F0F0FF;
+	text-decoration-color: #F0F0FF;
+
+	transition: all 0.3s;
+}
+
+blockquote a:not(.tags):not(.wp-block-button__link):hover {
+	color: #FFF;
+	text-decoration-color: #FFF;
+
+	transition: all 0.3s;
+}
+
+
+
+/* Couplet */
+pre.wp-block-verse {
+	padding: 10px 0px;
+
+	background-color: var(--color_gris_tres_clair);
+
+	border-radius: 4px;
+
+	font-size: 1.1em;
+	text-align: center;
+	font-style: italic;
+
+	transition: all 0.3s;
+}
+
+pre.wp-block-verse:hover {
+	background-color: #fff;
+
+	box-shadow: 0 0 5px 0 var(--color_gris_clair);
+
+	transition: all 0.3s;
+}
+
+
+
+/* Figures */
+figure {
+	border-bottom: none;
+	padding: 0 0;
+}
+
+figure > table {
+	margin-top: 0;
+}
+
+figcaption {
+	margin: 15px;
+
+	text-align: center;
+	font-style: italic;
+	font-size: 0.9em;
+	color: #808092;
+}
+
+
+/* Images */
+
+/* Images simples */
+.wp-block-image {
+	text-align: center;
+}
+
+img {
+	box-shadow: 0 0 5px 0 var(--color_gris_clair);
+
+	transition: all 0.3s;
+}
+
+img:hover {
+	box-shadow: 0 0 10px 0 #24232D;
+	border: 1px solid #24232D;
+
+	transition: all 0.3s;
+}
+
+
+/* Gallerie */
+figure.wp-block-gallery {
+	display: block;
+
+	text-align: center;
+}
+
+figure.wp-block-gallery ul {
+	align-items: center;
+	justify-content: space-evenly;
+
+	margin: 0px;
+}
+
+figure.wp-block-gallery ul li.blocks-gallery-item {
+	display: block;
+
+	margin: 10px;
+}
+
+figure.wp-block-gallery ul li figure {
+	margin: 0px;
+}
+
+div.wp-block-media-text figure {
+	margin: 0px;
+}
+
+
+/* Bannière */
+.wp-block-cover,
+.wp-block-cover-image {
+	max-height: 400px;
+
+	background-size: 100%;
+
+	transition: box-shadow 0.3s, background-size 2s cubic-bezier(0,.71,0,1);
+}
+
+.wp-block-cover:hover,
+.wp-block-cover-image:hover {
+	box-shadow: 0 0 10px 0 #24232D;
+
+	background-size: 107%;
+
+	transition: box-shadow 0.3s, background-size 5s cubic-bezier(.1,.59,.32,1);
+}
+
+.wp-block-cover .block-editor-block-list__layout,
+.wp-block-cover-image .block-editor-block-list__layout {
+	background-color: transparent;
+}
+
+
+
+
+/* Séparateur */
+hr.wp-block-separator {
+	height: 1px;
+	width: 80%;
+	margin: 50px auto;
+
+	border: none;
+	background-color: #0090FF;
+	background-image: linear-gradient(90deg, var(--main_color_theme)00 0%, var(--main_color_theme) 30%, #808092 50%, var(--main_color_theme) 70%, var(--main_color_theme)00 100%);
+}
+
+
+
+/* Tableau */
+table,
+table p {
+	font-size: 0.8em;
+}
+
+table tr td,
+table tr th {
+	padding: 10px 5px;
+}
+
+table thead {
+	text-align: center;
+
+	background-color: var(--main_color_theme);
+
+	color: #fff;
+
+	border-bottom: none;
+}
+
+table tfoot {
+	text-align: center;
+
+	background-color: var(--main_color_theme);
+
+	color: #fff;
+
+	border-top: none;
+}
+
+/* *********************************************************************************************************************************** */
+
+

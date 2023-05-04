@@ -1,0 +1,357 @@
+/* Style du menu principal */
+
+
+/* Tous les éléments du menu */
+.body .menu_main,
+.menu_main * {
+	transition: all 0.3s;
+}
+
+
+
+/* Style de base du menu */
+.body .menu_main {
+	position: relative;
+	display: block;
+
+	flex-grow: 0;
+	flex-shrink: 0;
+
+	height: calc(100vh - 80px);
+	width: 200px;
+
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	background-color:var(--background_body_color);
+	border-right: 1px solid var(--main_menu_border_color);
+}
+
+body.darkmode .body .menu_main {
+	background-color: var(--background_body_darkmode_color);
+	border-color: var(--main_menu_darkmode_border_color);
+}
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.body .menu_main {
+		display: none;
+	}
+
+	.menu_main.mobile_uncollapsed {
+		display: block;
+
+		position: fixed;
+		z-index: 1000;
+
+		height: max-content;
+		width: 100%;
+
+		border-right: none;
+
+		box-shadow: 0 0 10px 0 var(--color_gris_fonce);
+	}
+
+	body.darkmode .menu_main.mobile_uncollapsed {
+		box-shadow: 0 0 10px 0 #000;
+	}
+}
+
+.menu_main ul {
+	list-style-type: none;
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+/* Sous menu */
+.menu_main li ul {
+	display: none;
+
+	transition: height 0s;
+}
+
+.menu_main a {
+	display: flex;
+	align-items: center;
+
+	height: 40px;
+	width: 100%;
+
+	padding: 8px 0px 8px 10px;
+
+	/* Bouton de repli */
+	cursor: pointer;
+}
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.menu_main a {
+		width: 100%;
+	}
+}
+
+.menu_main .separator a,
+.menu_main a.separator {
+	border-bottom: 1px solid var(--main_menu_item_separator_color);
+}
+
+.menu_main .separator_up a,
+.menu_main a.separator_up {
+	border-top: 1px solid var(--main_menu_item_separator_color);
+}
+
+body.darkmode .menu_main .separator a,
+body.darkmode .menu_main a.separator,
+body.darkmode .menu_main .separator_up a,
+body.darkmode .menu_main a.separator_up  {
+	border-color: var(--main_menu_darkmode_item_separator_color);
+}
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.menu_main ul:last-child li:last-child.separator a {
+		border-bottom: none;
+	}
+}
+
+/* Décalage du contenu des items selon leur niveau (jusqu'a 3 enfants) */
+.menu_main ul ul a {
+	padding-left: 20px;
+}
+
+.menu_main ul ul ul a {
+	padding-left: 30px;
+}
+
+.menu_main ul ul ul ul a {
+	padding-left: 40px;
+}
+
+/* Décalage lors du hover */
+.menu_main a:hover {
+	padding-left: 14px;
+}
+
+.menu_main ul ul a:hover {
+	padding-left: 24px;
+}
+
+.menu_main ul ul ul a:hover {
+	padding-left: 34px;
+}
+
+.menu_main ul ul ul ul a:hover {
+	padding-left: 44px;
+}
+
+.menu_main a:hover {
+	background-color: var(--main_menu_item_hover_default_color);
+	text-shadow: 2px 2px 4px #00000059;
+
+	transition: all 0.3s cubic-bezier(.2,1,.2,1) ;
+}
+
+/* Contenu du lien */
+.menu_main a i {
+	position: relative;
+	flex-grow: 0;
+	flex-shrink: 0;
+
+	width: 28px;
+
+	margin-right: 3px;
+}
+
+.menu_main a:hover > i {
+	text-shadow: 2px 2px 2px #00000059;
+
+	transition: all 0.3s cubic-bezier(.2,1,.2,1) ;
+}
+
+.menu_main a.menu_main_compress i {
+	top: 1px;
+
+	transform: scaleX(-1);
+}
+
+.menu_main a span.menu_item_title {
+	display: inline-block;
+	flex-grow: 1;
+	flex-shrink: 1;
+
+	width: 100%;
+
+	overflow: hidden;
+	white-space: normal;
+
+	transition: opacity 0.4s cubic-bezier(1,0,.9,.4);
+}
+
+.menu_main a:hover > span.menu_item_title {
+	text-shadow: 2px 2px 2px #00000080;
+
+	transition: all 0.3s cubic-bezier(.2,1,.2,1) ;
+}
+
+/* Bouton menu dépliant */
+.menu_main li > a span.menu_item_sub_menu_toggle {
+	display: none;
+
+	height: 40px;
+	padding: 0px 10px;
+
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+.menu_main li.menu-item-has-children:not(.sub_level_open) > a span.toggle_on {
+	display: inline-block;
+}
+
+.menu_main li.menu-item-has-children.sub_level_open > a span.toggle_off {
+	display: inline-block;
+}
+
+
+
+/* Menu replié */
+.body .menu_main.collapsed {
+	min-width: 40px;
+	width: 40px;
+}
+
+.menu_main.collapsed a span {
+	opacity: 0;
+
+	transition: opacity 0.2s cubic-bezier(0,1,.5,1);
+}
+
+.menu_main.collapsed a {
+	width: 200px;
+
+	padding-left: 5px;
+
+	transition: width 0s;
+}
+
+.menu_main.collapsed a:hover {
+	padding-left: 5px;
+}
+
+.menu_main.collapsed a i {
+	padding-right: 0px;
+}
+
+.menu_main.collapsed a.menu_main_compress i {
+	transform: scaleX(1);
+}
+
+
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.menu_main .menu_main_compress {
+		display: none;
+	}
+}
+
+
+
+/* Texte */
+.menu_main a {
+	font-size: var(--menu_main_item_font_size);
+	font-weight: 500;
+}
+
+.menu_main a:hover {
+	color: var(--main_menu_item_text_hover_color);
+}
+
+.menu_main a i {
+	font-size: var(--menu_main_item_icon_font_size);
+	text-align: center;
+}
+
+
+
+/* Mobile */
+/* Boutons supplémentaires */
+.menu_main .button_mobile {
+	display: none;
+	align-items: baseline;
+	justify-content: space-evenly;
+
+	height: 40px;
+
+	border-bottom: 1px solid var(--color_gris_moyen);
+}
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.menu_main .button_mobile {
+		display: flex;
+	}
+}
+
+
+/* Recherche */
+.search-form_mobile {
+	display: none;
+
+	height: 40px;
+
+	border-bottom: 1px solid var(--color_gris_moyen);
+}
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.menu_main .search-form_mobile {
+		display: block;
+	}
+}
+
+.search-form_mobile .search-field_mobile {
+	height: 100%;
+	width: calc(100% - 40px);
+	padding: 0 15px;
+
+	border: none;
+	background: transparent;
+}
+
+.search-form_mobile .search-submit_mobile {
+	height: 30px;
+	width: 30px;
+
+	border-radius: 4px;
+	border: none;
+	background: transparent;
+
+	color: #000;
+}
+
+body.darkmode .search-form_mobile .search-field_mobile,
+body.darkmode .search-form_mobile .search-submit_mobile {
+	color: #fff;
+}
+
+.search-form_mobile .search-submit_mobile:hover {
+	background: var(--color_gris_tres_clair);
+
+	box-shadow: 0 0 5px 0px var(--color_gris_clair);
+	text-shadow: 0 0 5px var(--color_gris_fonce);
+
+	cursor: pointer;
+}
+
+
+
+/* Menu supérieur */
+.menu_main .menu_superior_mobile {
+	display: none;
+
+	border-top: 1px solid var(--color_gris_moyen);
+}
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.menu_main .menu_superior_mobile {
+		display: block;
+	}
+}
+
+

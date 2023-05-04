@@ -1,0 +1,254 @@
+/* Style du contenu principal */
+
+
+/* Main */
+.body .main {
+	display: block;
+
+	flex-grow: 1;
+	flex-shrink: 1;
+
+	background-color: var(--main_background_color);
+	background-image: var(--main_background_gradient);
+
+	overflow-y: scroll;
+}
+
+body.darkmode .body .main {
+	background-color: var(--main_background_darkmode_color);
+	background-image: var(--main_background_darkmode_gradient);
+}
+
+
+
+/* Title */
+.main .title_page {
+	position: relative;
+	display: flex;
+
+	z-index: 100;
+	height: 80px;
+
+	padding-left: 20px;
+
+	justify-content: flex-start;
+	align-items: center;
+
+	background-color: var(--main_title_page_color_default);
+
+	font-family: var(--txt_page_title_font_family);
+	font-size: var(--txt_page_title_font_size);
+	color: var(--txt_page_title_text_color);
+	text-shadow: 1px 1px 2px #00000080;
+}
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.main .title_page {
+		padding-left: 15px;
+	}
+}
+
+.main .title_page h1 {
+	margin: 8px 0;
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	font-size: var(--txt_page_title_font_size);
+	font-weight: normal;
+	text-shadow: 0px 0px 1px #FFF, 1px 1px 2px #000000d6;
+}
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.main .title_page {
+		height: max-content;
+		min-height: 50px;
+
+		font-size: var(--txt_page_title_font_size_mobile);
+	}
+
+	.main .title_page h1 {
+		white-space: normal;
+		font-size: var(--txt_page_title_font_size_mobile);
+	}
+}
+
+.main .title_page.tag {
+	background-color: var(--main_title_page_color_tags);
+}
+
+.main .title_page i {
+	padding-right: 10px;
+}
+
+
+
+/* Option page */
+.main .title_page .page_option {
+	flex-grow: 1;
+	min-width: 88px;
+	padding-right: 20px;
+
+	text-align: end;
+	font-family: var(--txt_body_font_family);
+	font-size: 13px;
+	color: var(--main_title_option_text_color);
+}
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.main .title_page .page_option .edit_post {
+		display: none;
+	}
+
+	.main .title_page .page_option {
+		padding-right: 15px;
+	}
+}
+
+.main .title_page .page_option > * {
+	transition: all 0.3s;
+}
+
+.main .title_page .page_option a {
+	text-decoration: underline dashed var(--main_title_option_text_color);
+}
+
+.main .title_page .page_option a:hover {
+	text-decoration: underline solid var(--main_title_option_text_color);
+}
+
+.main .title_page .page_option i {
+	position: relative;
+
+	top: 1px;
+
+	padding-right: 0px;
+}
+
+.main .title_page .page_option.style_display i {
+	font-size: 25px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.main .title_page .page_option.style_display i:nth-child(2) {
+	padding-left: 8px;
+}
+
+.main .title_page .page_option.style_display i:not(.active):hover {
+	color: var(--color_gris_tres_clair);
+	text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.8);
+
+	cursor: pointer;
+}
+
+.main .title_page .page_option.style_display i.active {
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), 0 0 5px #00000080;
+}
+
+
+/* Content */
+.main .content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	flex-direction: row;
+
+	position: relative;
+
+	width: 100%;
+	padding: 20px 0 0 20px;
+}
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.main .content {
+		padding-left: 0px;
+	}
+}
+
+
+
+
+/* Text */
+.content > .text {
+	display: block;
+
+	width: 100%;
+	margin: 0 20px 20px 0;
+	padding: 20px;
+
+	background-color:var(--background_body_color);
+	box-shadow: 0 0 15px 1px #0000000d;
+}
+
+body.darkmode .content > .text {
+	background-color: var(--background_body_darkmode_color);
+}
+
+.content > .text:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+@media screen and (max-width: "[[screen_size_tablet]]") {
+	/* Text */
+	.content.single .text,
+	.content.page .text {
+		flex-basis: 100%;
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+}
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.content.single .text,
+	.content.page .text {
+		padding: 10px;
+	}
+}
+
+
+
+.content.frontpage.midtitle {
+	padding-right: 20px;
+	padding-bottom: 20px;
+
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.content.frontpage.last {
+	padding-right: 20px;
+	padding-bottom: 40px;
+}
+
+.content .button {
+	display: inline-block;
+
+	margin: 0px 5px;
+	padding: 10px;
+
+	background-color: var(--main_color_theme);
+
+	border-radius: 3px;
+
+	color: #fff;
+	font-size: 22px;
+	text-shadow: 0 0 15px #000;
+
+	transition: all 0.2s;
+}
+
+.content .button:hover {
+	box-shadow: 0 0 15px 1px #00000052;
+
+	transform: scale(1.01);
+
+	transition: all 0.2s;
+}
+
+
+
+

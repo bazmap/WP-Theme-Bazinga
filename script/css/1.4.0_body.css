@@ -1,0 +1,25 @@
+/* Body */
+
+.body {
+	position: relative;
+	display: flex;
+
+	width: 100%;
+	height: calc(100% - 80px);
+
+	overflow: hidden;
+
+	transition: opacity 0.4s;
+}
+
+/* Masquage des élément */
+body.loading .body {
+	opacity: 0;
+}
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.body {
+		height:max-content;
+		top: 50px;
+	}
+}

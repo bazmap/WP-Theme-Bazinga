@@ -1,0 +1,73 @@
+/* Style des tables de matière générées par TOC et utilisé dans le sidebar */
+
+
+/* Table de contenu */
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.ez-toc-widget nav {
+		font-size: var(--txt_table_of_content_item_font_size);
+	}
+}
+.ez-toc-widget .ez-toc-title-container {
+	line-height: 1em;
+}
+
+.ez-toc-widget nav {
+	font-size: var(--txt_table_of_content_item_font_size);
+}
+
+.ez-toc-widget nav > ul {
+	padding: 8px 0 0 0 !important;
+}
+
+.ez-toc-widget nav ul {
+	counter-reset: item;
+
+	font-size: var(--txt_table_of_content_item_font_size_factor);
+	line-height: 1.1em;
+}
+
+.ez-toc-widget nav ul,
+.ez-toc-widget nav ul li {
+	line-height: 1.22em;
+}
+
+.ez-toc-widget nav ul li {
+	list-style: none;
+}
+.ez-toc-widget nav ul li.active {
+	background-color: unset !important;
+}
+
+.ez-toc-widget nav ul li a {
+	padding-left: 0px;
+	letter-spacing: -0.04em ;
+}
+
+.ez-toc-widget nav ul li a:before {
+	content: counters(item, ".") ". - ";
+	counter-increment: item;
+
+	font-weight: normal;
+}
+
+.ez-toc-widget nav ul li a:hover {
+	text-shadow: 0px 0px 5px #808092;
+
+	color: #24232D;
+	text-decoration: underline solid #24232D;
+}
+
+.ez-toc-widget-container li.active > a {
+	font-weight: normal;
+}
+
+body.darkmode .ez-toc-widget nav ul li a:hover {
+	text-shadow: 0px 0px 5px #ffffff63;
+
+	color: #fff;
+	text-decoration-color: #fff;
+}
+
+.ez-toc-widget nav ul > li li {
+	padding-left: 5px;
+}

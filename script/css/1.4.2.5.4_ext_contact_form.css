@@ -1,0 +1,442 @@
+/* Style des formulaires générés par l'extension Social Warefare */
+
+
+/* Formulaire                                  */
+/***********************************************/
+
+.wpcf7 {
+	margin: auto;
+	max-width: 680px;
+	text-align: center;
+}
+
+.wpcf7 * {
+	transition: all 0.3s;
+}
+
+
+
+/* Eléments                                    */
+/***********************************************/
+
+/* Forme générale */
+.wpcf7 input,
+.wpcf7 textarea,
+.wpcf7 select {
+	display: inline-block;
+
+	width: 100%;
+
+	padding: 8px;
+	margin: 5px 0px;
+
+	border: 1px solid #ffffff4d;
+	border-radius: 5px;
+
+	line-height: 17px;
+}
+
+/* Couleur générale */
+body.darkmode .wpcf7 input,
+body.darkmode .wpcf7 textarea,
+body.darkmode .wpcf7 select {
+	background-color: #000;
+	color: var(--color_gris)
+}
+
+
+
+/* Aspect des éléments */
+
+/* Acceptance */
+.wpcf7 span.wpcf7-form-control.wpcf7-acceptance {
+	display: block;
+
+	width: 100%;
+}
+
+.wpcf7 span.wpcf7-form-control.wpcf7-acceptance label {
+	margin: 0px;
+	padding: 0px;
+}
+
+.wpcf7 span.wpcf7-form-control.wpcf7-acceptance label input {
+	width: auto;
+}
+
+
+
+/* Liste déroulante : flêche déroulante */
+.wpcf7 select {
+	position: relative;
+
+	appearance: none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+}
+
+.wpcf7 span.wpcf7-form-control-wrap[class*="menu-"]:not([class*="menu-multiple"]):after {
+	content: '>';
+
+	position: absolute;
+
+	top: -2px;
+	right: 12px;
+
+	color: #526f7a;
+	font-size: 20px;
+	font-weight: bold;
+	opacity:0.7;
+
+	transform: rotate(90deg);
+
+	pointer-events:none;
+	cursor: pointer;
+}
+
+
+
+/* Quizz */
+.wpcf7 .wpcf7-form-control-wrap .wpcf7-quiz-label {
+	text-justify: none;
+}
+
+
+
+/* Checkbox et radio */
+/* Placement éléments */
+.wpcf7 span.wpcf7-form-control.wpcf7-checkbox,
+.wpcf7 span.wpcf7-form-control.wpcf7-radio {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.wpcf7 span.wpcf7-form-control.wpcf7-checkbox .wpcf7-list-item,
+.wpcf7 span.wpcf7-form-control.wpcf7-radio .wpcf7-list-item {
+	display: flex;
+	flex-direction: column;
+
+	margin: 0px;
+	padding: 0px;
+}
+
+.wpcf7 span.wpcf7-form-control.wpcf7-checkbox .wpcf7-list-item label,
+.wpcf7 span.wpcf7-form-control.wpcf7-radio .wpcf7-list-item label {
+	display: block;
+	position: relative;
+
+	min-width: 80px;
+	margin: 0px;
+	padding: 0px;
+
+	text-align: center;
+}
+
+.wpcf7 span.wpcf7-form-control.wpcf7-acceptance .wpcf7-list-item {
+	margin: 0px;
+}
+
+.wpcf7 span.wpcf7-form-control.wpcf7-acceptance .wpcf7-list-item label {
+	position: relative;
+}
+
+
+.wpcf7 span.wpcf7-form-control.wpcf7-checkbox .wpcf7-list-item input[type="checkbox"],
+.wpcf7 span.wpcf7-form-control.wpcf7-radio .wpcf7-list-item input[type="radio"] {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+/* Aspect de la case */
+.wpcf7 .wpcf7-acceptance .wpcf7-list-item label input[type="checkbox"],
+.wpcf7 .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"],
+.wpcf7 .wpcf7-radio .wpcf7-list-item label input[type="radio"] {
+	padding: 0px;
+	margin: 0px;
+
+	opacity: 0.01;
+}
+
+.wpcf7 .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"],
+.wpcf7 .wpcf7-radio .wpcf7-list-item label input[type="radio"] {
+	height: 28px;
+}
+
+.wpcf7 .wpcf7-acceptance .wpcf7-list-item label input[type="checkbox"]{
+	height: 13px;
+	margin: 10px 30px;
+}
+
+.wpcf7 .wpcf7-acceptance .wpcf7-list-item label input[type="checkbox"] + span:before,
+.wpcf7 .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"] + span:before,
+.wpcf7 .wpcf7-radio .wpcf7-list-item label input[type="radio"] + span:before {
+	display: block;
+
+	position: absolute;
+
+	width: 45px;
+	height: 25px;
+
+	padding: 0px 10px;
+
+	border: 1px solid;
+	border-radius: 25px;
+
+	line-height: 25px;
+
+	cursor: pointer;
+
+	transition: all .2s;
+}
+
+.wpcf7 .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"] + span:before,
+.wpcf7 .wpcf7-radio .wpcf7-list-item label input[type="radio"] + span:before {
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.wpcf7 .wpcf7-acceptance .wpcf7-list-item label input[type="checkbox"] + span:before {
+	top: -5px;
+	left: 0px;
+}
+
+/* Aspect de la coche */
+.wpcf7 .wpcf7-acceptance .wpcf7-list-item label input[type="checkbox"] + span:after,
+.wpcf7 .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"] + span:after,
+.wpcf7 .wpcf7-radio .wpcf7-list-item label input[type="radio"] + span:after {
+	content: '';
+	display: block;
+
+	position: absolute;
+
+	width: 19px;
+	height: 19px;
+
+	cursor: pointer;
+
+	border-radius: 21px;
+
+	transition: all .2s; /* Petite transition */
+}
+
+.wpcf7 .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"] + span:after,
+.wpcf7 .wpcf7-radio .wpcf7-list-item label input[type="radio"] + span:after {
+	top: 4px;
+}
+
+.wpcf7 .wpcf7-acceptance .wpcf7-list-item label input[type="checkbox"] + span:after {
+	top: -1px;
+}
+
+/* Aspect non cochée */
+.wpcf7 .wpcf7-acceptance .wpcf7-list-item label input[type="checkbox"]:not(:checked) + span:before,
+.wpcf7 .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"]:not(:checked) + span:before,
+.wpcf7 .wpcf7-radio .wpcf7-list-item label input[type="radio"]:not(:checked) + span:before {
+	content: 'Non';
+
+	color: var(--form_failed_color);
+	text-align: right;
+
+	transition: all .2s;
+}
+
+.wpcf7 .wpcf7-acceptance .wpcf7-list-item label input[type="checkbox"]:not(:checked) + span:after,
+.wpcf7 .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"]:not(:checked) + span:after,
+.wpcf7 .wpcf7-radio .wpcf7-list-item label input[type="radio"]:not(:checked) + span:after {
+	background: var(--form_failed_color);
+
+	box-shadow: 0 0 3px 0px #626262;
+
+	transition: all .2s;
+}
+
+.wpcf7 .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"]:not(:checked) + span:after,
+.wpcf7 .wpcf7-radio .wpcf7-list-item label input[type="radio"]:not(:checked) + span:after {
+	left: calc( 50% - 20px);
+	transform: translateX(-50%);
+}
+
+.wpcf7 .wpcf7-acceptance .wpcf7-list-item label input[type="checkbox"]:not(:checked) + span:after {
+	left: 4px;
+}
+
+/* Aspect cochée */
+.wpcf7 .wpcf7-acceptance .wpcf7-list-item label input[type="checkbox"]:checked + span:before,
+.wpcf7 .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"]:checked + span:before,
+.wpcf7 .wpcf7-radio .wpcf7-list-item label input[type="radio"]:checked + span:before {
+	content: 'Oui';
+
+	color: rgb(0, 125, 83);
+	text-align: left;
+
+	transition: all .2s;
+}
+
+.wpcf7 .wpcf7-acceptance .wpcf7-list-item label input[type="checkbox"]:checked + span:after,
+.wpcf7 .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"]:checked + span:after,
+.wpcf7 .wpcf7-radio .wpcf7-list-item label input[type="radio"]:checked + span:after {
+	background: var(--form_valid_color);
+
+	box-shadow: 0 0 3px 0px #626262;
+
+	transition: all .2s;
+}
+
+.wpcf7 .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"]:checked + span:after,
+.wpcf7 .wpcf7-radio .wpcf7-list-item label input[type="radio"]:checked + span:after {
+	left: calc( 50% + 20px);
+	transform: translateX(-50%);
+}
+
+.wpcf7 .wpcf7-acceptance .wpcf7-list-item label input[type="checkbox"]:checked + span:after {
+	left: 44px;
+}
+
+
+
+/* Couleurs des zones de saisie */
+
+/* Fond */
+/* Au repos */
+.wpcf7 input:not([type="submit"]),
+.wpcf7 textarea,
+.wpcf7 select,
+.wpcf7 input[type="checkbox"]:before {
+	background-color: #ffffff;
+}
+
+/* Couleur validité */
+/* Input valid */
+.wpcf7 input:not([type="submit"]):valid,
+.wpcf7 select:valid,
+.wpcf7 textarea:valid {
+	border-color: var(--main_color_theme)75;
+}
+
+/* Input invalid */
+.wpcf7 input:not([type="submit"]):invalid,
+.wpcf7 select:invalid,
+.wpcf7 select:invalid {
+	border-color: var(--form_failed_color);
+	border-left-width: 3px;
+}
+
+
+/* Hover */
+.wpcf7 input:not([type="submit"]):valid:hover,
+.wpcf7 textarea:valid:hover,
+.wpcf7 select:valid:hover,
+.wpcf7  .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"]:valid + span:hover:before {
+	box-shadow: 0px 0px 4px 0px var(--main_color_theme);
+}
+.wpcf7 input:not([type="submit"]):invalid:hover,
+.wpcf7 textarea:invalid:hover,
+.wpcf7 select:invalid:hover,
+.wpcf7  .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"]:invalid + span:hover:before {
+	box-shadow: 0px 0px 4px 0px var(--form_failed_color);
+}
+
+
+/* Focus */
+.wpcf7 input:not([type="submit"]):valid:focus,
+.wpcf7 textarea:valid:focus,
+.wpcf7 select:valid:focus,
+.wpcf7  .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"]:valid + span:hover:before {
+	box-shadow: 0px 0px 10px 0px var(--main_color_theme);
+}
+.wpcf7 input:not([type="submit"]):invalid:focus,
+.wpcf7 textarea:invalid:focus,
+.wpcf7 select:invalid:focus,
+.wpcf7  .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"]:invalid + span:hover:before {
+	box-shadow: 0px 0px 10px 0px var(--form_failed_color);
+}
+
+
+
+/* Validation formulaire                       */
+/***********************************************/
+
+/* Bouton de validation normal */
+.wpcf7 input[type="submit"],
+body.darkmode .wpcf7 input[type="submit"],
+.wpcf7 button {
+	height:35px;
+	width: 210px;
+
+	margin-left: 50%;
+	transform: translateX(-50%);
+	padding: 5px 7px 5px 7px;
+
+	border-radius: 5px;
+
+	background-color: var(--main_color_theme);
+
+	font-family: var(--txt_body_font_family);
+	font-size: unset;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+
+	transition: all 0.3s;
+}
+
+
+/* Bouton de validation hover et focus */
+.wpcf7 input[type="submit"]:hover,
+body.darkmode .wpcf7 input[type="submit"]:hover,
+/*.wpcf7 input[type="submit"]:focus,*/
+.wpcf7 input[type="submit"]:active,
+body.darkmode .wpcf7 input[type="submit"]:active,
+.wpcf7 button:hover,
+body.darkmode .wpcf7 button:hover,
+/*.wpcf7 button:focus,*/
+.wpcf7 button:active,
+body.darkmode .wpcf7 button:active {
+	background-color: var(--color_violet_electric);
+
+	cursor:pointer;
+
+	transition: all 0.3s;
+}
+
+.wpcf7 input[type="submit"]:hover,
+.wpcf7 button:hover {
+	box-shadow: 1px 2px 5px #3e3e3e;
+}
+
+.wpcf7 div input[type="submit"]:active,
+.wpcf7 button:active {
+	box-shadow: none;
+}
+
+
+
+/* Message d'alerte                            */
+/***********************************************/
+/* Positionnement */
+.wpcf7 div.wpcf7-response-output {
+	padding: 8px;
+	margin: 5px 0px;
+
+	border-radius: 5px;
+
+	line-height: 17px;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+	border-color: var(--form_valid_color); /* Vert */
+}
+
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output {
+	border-color: var(--form_failed_color); /* Red */
+}
+
+.wpcf7 form.spam .wpcf7-response-output,
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+	border-color: var(--color_orange);
+}
+

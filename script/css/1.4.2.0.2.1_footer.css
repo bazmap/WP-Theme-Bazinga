@@ -1,0 +1,183 @@
+/* Footer */
+.main .footer {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+	width: 100%;
+
+	padding: 20px 0 0 20px;
+
+	background-color: var(--main_footer_background_color);
+
+	color: var(--main_footer_text_color);
+}
+
+body.darkmode .main .footer {
+	background-color: #000;
+}
+
+.footer h2 {
+	margin-bottom: 10px;
+
+	color: var(--main_footer_title_color);
+
+	font-family: var(--txt_page_title_font_family);
+	font-weight: normal;
+}
+
+.footer p {
+	margin-bottom: 10px;
+}
+
+.footer li {
+	margin-left: 15px;
+}
+
+.footer a {
+	text-decoration: underline dashed var(--main_footer_text_color);
+}
+
+.footer a:hover {
+	text-decoration: underline solid var(--main_footer_text_color);
+}
+
+.footer a.button {
+	display: inline-block;
+
+	width: 150px;
+
+	padding: 6px;
+	margin-right: 5px;
+
+	border-radius: 5px;
+
+	background-color: var(--main_color_theme);
+
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+
+	transition: all 0.3s;
+}
+
+.footer a.button:hover {
+	background-color: var(--color_violet_electric);
+
+	transition: all 0.3s;
+}
+
+.footer .footer_widget {
+	display: block;
+
+	flex-grow: 1;
+	flex-shrink: 1;
+
+	margin: 0 20px 20px 0;
+}
+
+.footer_widget.footer_left {
+	flex-basis: 30%;
+	min-width: 400px;
+}
+
+.footer_widget.footer_middle {
+	flex-basis: 20%;
+}
+
+.footer_widget.footer_right {
+	flex-basis: 40%;
+}
+
+@media screen and (max-width: "[[screen_size_tablet]]") {
+	.footer .footer_widget {
+		flex: 0 0 calc(100% - 20px);
+	}
+}
+
+.footer .footer_copyright {
+	display: block;
+
+	flex: 0 0 100%;
+	padding-bottom: 10px;
+
+	color: var(--main_footer_copyright_color);
+	text-align: center;
+	font-size: var(--main_footer_copyright_font_size);
+}
+
+.footer_copyright a,
+.footer_copyright a:visited {
+	color: var(--main_footer_copyright_color);
+	text-decoration: none;
+}
+
+.footer_copyright a:hover {
+	color: var(--main_color_theme);
+	text-decoration: none;
+}
+
+
+
+/* Scroll progress */
+.scroll_progress {
+	position: fixed;
+	z-index: 1000;
+
+	bottom: 0px;
+
+	opacity: 0;
+}
+
+.scroll_progress,
+.scroll_progress * {
+	transition: opacity 0.2s;
+}
+
+.scroll_progress .progress_bar {
+	position: absolute;
+
+	bottom: 0px;
+	height: 1px;
+	width: 0%;
+
+	background-color: var(--main_color_theme);
+	box-shadow: 0 0 4px 3px var(--main_color_theme), 0 0 5px 0px var(--main_color_theme), 0 0 7px 3px #ffffff;
+}
+
+.scroll_progress .progress_value {
+	position: absolute;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 35px;
+	height: 19px;
+	bottom: 10px;
+	right: 0%;
+
+	background-color: var(--main_color_theme);
+	box-shadow: 0 0 7px 2px #808092;
+
+	border-radius: 3px;
+
+	color: #fff;
+	font-size: var(--progress_bar_font_size);
+}
+
+.scroll_progress .progress_value::after {
+	content: '';
+	position: absolute;
+
+	bottom: -8px;
+	right: 0px;
+	height: 0px;
+	width: 0px;
+
+	border-top: 5px solid var(--main_color_theme);
+	border-right: 5px solid var(--main_color_theme);
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid transparent;
+}

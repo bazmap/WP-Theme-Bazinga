@@ -1,0 +1,33 @@
+/* Style des boutons de partage générés par l'extension Social Warefare */
+
+.content .text .swp_social_panel .swp_share_button a.swp_share_link {
+	font-family: var(--txt_content_font_family);
+	color: #fff;
+}
+
+.content .text .swp_social_panel .swp_share_button a.swp_share_link:hover {
+	color: #fff;
+}
+
+.content .text .swp_social_panel .swp_share_button a.swp_share_link:after {
+	display:none;
+}
+
+.content .text .swp_social_panel .total_shares span.swp_count,
+.content .text .swp_social_panel .total_shares span.swp_count span.swp_label {
+	font-family: var(--txt_content_font_family);
+	color: var(--txt_content_text_color);
+}
+
+.darkmode .content .text .swp_social_panel .total_shares  span.swp_count,
+.darkmode .content .text .swp_social_panel .total_shares span.swp_count span.swp_label {
+	color: var(--txt_content_text_darkmode_color);
+}
+
+.content .text .swp_social_panel .total_shares::before  {
+	color: var(--txt_content_text_color);
+}
+
+.darkmode .content .text .swp_social_panel .total_shares::before  {
+	color: var(--txt_content_text_darkmode_color);
+}

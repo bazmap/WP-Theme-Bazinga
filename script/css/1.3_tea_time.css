@@ -1,0 +1,243 @@
+/* Pause détente */
+
+.tea_time {
+	display: none;
+
+	position: fixed;
+	z-index: 10000;
+
+	height: 100vh;
+	width: 100vw;
+
+	color: #fff;
+}
+
+
+
+.tea_time .tea_time_background {
+	position: absolute;
+
+	height: 100%;
+	width: 100%;
+
+	background-color: var(--main_color_theme);
+}
+
+body.darkmode .tea_time .tea_time_background {
+	background-color: var(--main_darkmode_color);
+}
+
+
+
+.tea_time .tea_time_close {
+	position: absolute;
+	z-index: 10;
+
+	right: 0px;
+
+	height: 25px;
+	width: 25px;
+
+	margin: 20px;
+
+	border-radius: 4px;
+
+	text-align: center;
+	line-height: 30px;
+	font-size: 23px;
+
+	cursor: pointer;
+
+	transition: all 0.2s;
+}
+
+.tea_time .tea_time_close:hover {
+	background: #ffffff3d;
+
+	box-shadow: 0 0 10px 0 var(--color_gris_moyen);
+
+	transition: all 0.2s;
+}
+
+
+
+.tea_time .tea_time_content {
+	position: relative;
+	display: flex;
+
+	flex-direction: column;
+
+	height: 100%
+}
+
+
+
+.tea_time .tea_time_content .tea_time_kofi {
+	display: flex;
+
+	flex-grow: 1;
+	flex-direction: column;
+	align-items: center;
+
+	overflow: auto;
+}
+
+
+
+.tea_time_kofi .kofi_content {
+	flex: 0 0;
+	min-width: 370px;
+	max-width: 900px;
+
+	margin-top: 30px;
+	padding: 10px 5%;
+
+	font-size: 16px;
+	text-align: center;
+}
+
+
+
+
+
+
+.tea_time_kofi .kofi_content p {
+	margin-bottom: 10px;
+}
+
+
+
+.tea_time_kofi .kofi_content .t1 {
+	margin-bottom: 30px;
+
+	text-align: center;
+	font-size: 45px;
+	color: var(--main_darkmode_color);
+}
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.tea_time_kofi .kofi_content .t1 {
+		margin-bottom: 20px;
+
+		font-size: 35px;
+	}
+}
+
+body.darkmode .tea_time_kofi .kofi_content .t1 {
+	color: var(--main_color_theme);
+}
+
+.tea_time_kofi .kofi_content .t2 {
+	margin-bottom: 5px;
+
+	text-align: center;
+	font-size: 23px;
+}
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.tea_time_kofi .kofi_content .t2 {
+		font-size: 20px;
+	}
+}
+
+
+
+.tea_time_kofi .kofi_content table td:first-child {
+	width: 120px;
+	height: 50px;
+	font-size: 24px;
+	font-weight: bold;
+	color: var(--main_darkmode_color);
+}
+
+body.darkmode .tea_time_kofi .kofi_content table td:first-child {
+	color: var(--main_color_theme);
+}
+
+
+
+.tea_time .kofi_content.animation {
+	display:block;
+
+	margin-top: 0px;
+}
+
+.tea_time .animation .tea_time_animation_cup {
+	position: relative;
+
+	top: 50%;
+	transform: translateY(-50%);
+
+	height: 200px;
+	width: 200px;
+
+	margin: 0 auto;
+}
+
+.tea_time .kofi_content.animation .kofi_logo {
+	position: absolute;
+
+	top: 50%;
+	transform: translateY(-50%);
+
+	width: 100%;
+
+	color: var(--main_color_theme);
+	font-size: 18px;
+	font-weight: bold;
+
+	opacity: 1;
+
+	transition: all 0.3s;
+}
+
+.tea_time .kofi_content.animation .kofi_logo.hover {
+	opacity: 0;
+}
+
+.tea_time .kofi_content.animation:hover .kofi_logo.wait {
+	opacity: 0;
+}
+
+.tea_time .kofi_content.animation:hover .kofi_logo.hover {
+	opacity: 1;
+}
+
+
+
+.tea_time .tea_time_footer {
+	flex-grow: 0;
+
+	margin-bottom: 5px;
+
+	text-align: center;
+}
+
+.tea_time .tea_time_footer .title {
+	display: block;
+
+	font-family: var(--txt_site_title_font_family);
+	font-size: 30px;
+}
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.tea_time .tea_time_footer .title {
+		font-size: 25px;
+	}
+}
+
+.tea_time .tea_time_footer .description {
+	display: block;
+
+	opacity: 0.7;
+
+	font-size: 13px;
+}
+
+@media screen and (max-width: "[[screen_size_mobile]]") {
+	.tea_time .tea_time_footer .description {
+		font-size: 10px;
+	}
+}
+
+

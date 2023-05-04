@@ -1,0 +1,144 @@
+/* Style des formulaires générés par l'extension Social Warefare */
+
+
+/* Formulaire                                  */
+/***********************************************/
+
+.text form.wait {
+	max-width: 600px;
+
+	margin: auto;
+	padding: 40px;
+
+	background-color: rgba(128, 128, 128, 0.1);
+
+	border-radius: 5px;
+}
+
+.text form.wait * {
+	transition: all 0.3s;
+}
+
+
+
+/* Eléments                                    */
+/***********************************************/
+
+/* Conteneur */
+.wpforms-form .wpforms-field {
+	width: 100%;
+
+	margin: 0 0 20px 0;
+}
+
+/* Label */
+.wpforms-form .wpforms-field-label {
+	display: block;
+
+	font-weight: bold;
+}
+
+.wpforms-form .wpforms-required-label {
+	color: #F00;
+}
+
+/* Input */
+.wpforms-field input,
+.wpforms-field textarea,
+.wpforms-field select {
+	width: 100%;
+
+	padding: 8px;
+	margin: 5px 0px;
+
+	border: 1px solid hsla(0, 0%, 0%, 0.1);
+	border-radius: 5px;
+
+	line-height: 17px;
+}
+
+.wpforms-field-row {
+	display: grid;
+	
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	
+	grid-gap: 20px;
+}
+
+.wpforms-field-row-block {
+	flex: auto;
+}
+
+
+/* Couleurs des zones de saisie */
+
+/* Fond */
+/* Au repos */
+.wpforms-field input:not([type="submit"]),
+.wpforms-field textarea,
+.wpforms-field select,
+.wpforms-field input[type="checkbox"]:before {
+	background-color: #FFFFFF;
+	color: var(--color_gris_fonce);
+}
+body.darkmode .wpforms-field input:not([type="submit"]),
+body.darkmode .wpforms-field textarea,
+body.darkmode .wpforms-field select,
+body.darkmode .wpforms-field input[type="checkbox"]:before {
+	background-color: var(--color_gris_fonce);
+	color: var(--color_gris);
+}
+
+/* Couleur validité */
+/* Input valid */
+.wpforms-field input:not([type="submit"]):valid,
+.wpforms-field select:valid,
+.wpforms-field textarea:valid {
+	/*border-color: var(--main_color_theme); */
+}
+/* Input invalid */
+.wpforms-field input:not([type="submit"]):invalid,
+.wpforms-field select:invalid,
+.wpforms-field select:invalid {
+	border-color: var(--form_failed_color);
+	border-left-width: 3px;
+}
+
+
+/* Hover */
+.wpforms-field input:not([type="submit"]):valid:hover,
+.wpforms-field textarea:valid:hover,
+.wpforms-field select:valid:hover,
+.wpforms-field  .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"]:valid + span:hover:before {
+	box-shadow: 0px 0px 4px 0px var(--main_color_theme);
+}
+.wpforms-field input:not([type="submit"]):invalid:hover,
+.wpforms-field textarea:invalid:hover,
+.wpforms-field select:invalid:hover,
+.wpforms-field  .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"]:invalid + span:hover:before {
+	box-shadow: 0px 0px 4px 0px var(--form_failed_color);
+}
+
+
+/* Focus */
+.wpforms-field input:not([type="submit"]):valid:focus,
+.wpforms-field textarea:valid:focus,
+.wpforms-field select:valid:focus,
+.wpcf7  .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"]:valid + span:hover:before {
+	box-shadow: 0px 0px 10px 0px var(--main_color_theme);
+	outline: 1px solid var(--main_color_theme);
+}
+.wpforms-field input:not([type="submit"]):invalid:focus,
+.wpforms-field textarea:invalid:focus,
+.wpforms-field select:invalid:focus,
+.wpcf7  .wpcf7-checkbox .wpcf7-list-item label input[type="checkbox"]:invalid + span:hover:before {
+	box-shadow: 0px 0px 10px 0px var(--form_failed_color);
+	outline: 1px solid var(--form_failed_color);
+}
+
+
+
+
+
+

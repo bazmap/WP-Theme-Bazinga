@@ -1,0 +1,144 @@
+/* Variables CSS */
+
+:root {
+	/* Couleurs */
+		/* Base */
+			--color_bleu_dodger: #0090FF;	/* rgb(0, 144, 255) */
+			--color_violet_electric: #9000FF;	/* rgb(144, 0, 255) */
+			--color_violet_fonce: #240B36;	/* rgb(36, 11, 54) */
+			--color_orange: #FF9000;	/* rgb(255, 144, 0) */
+			--color_rose: #FF0090;	/* rgb(255, 0, 144) */
+			--color_rouge: #FF1E1E;	/* rgb(255, 30, 30) */
+			--color_rouge_rose: #C31432;	/* rgb(195, 20, 50) */
+			--color_vert_jaune: #90FF00;	/* rgb(144, 255, 0) */
+			--color_vert_clair: #00FF90;	/* rgb(0, 255, 144) */
+			--color_vert_fonce: #007070;	/* rgb (0, 112, 112) */
+			--color_noir: #000000;	/* rgb(0, 0, 0) */
+			--color_gris_tres_clair: #F0F0FF;	/* rgb(240, 240, 255) */
+			--color_gris_clair: #D2D2DC;	/* rgb (210, 210, 220) */
+			--color_gris: #B4B4BF;	/* rgb (180, 180, 191) */
+			--color_gris_moyen: #808092;	/* rgb (128, 128, 146) */
+			--color_gris_peu_fonce: #6C6B75;	/* rgb (108, 107, 117) */
+			--color_gris_fonce: #24232D;	/* rgb (36, 35, 45) */
+		/* Gradient */
+			/* #C31432 => #240B36 */
+			/* #C31432 => #9000FF */
+		/* Thème */
+			--main_color_theme: var(--color_bleu_dodger);
+			--main_darkmode_color: var(--color_gris_fonce);
+
+
+
+	/* Eléments */
+		/* Général */
+			--txt_body_font_family: "Quicksand", sans-serif;
+			--txt_body_font_size: 0.9em;
+			--txt_body_text_color: var(--color_gris_fonce);
+			--txt_body_darkmode_text_color: var(--color_gris_tres_clair);
+			--background_body_color: #FFFFFF;
+			--background_body_color_00: #FFFFFF00;
+			--background_body_color_22: #FFFFFF22;
+			--background_body_color_EE: #FFFFFFEE;
+			--background_body_darkmode_color: var(--main_darkmode_color);
+			--background_body_darkmode_color_00: #24232D00;
+			--background_body_darkmode_color_22: #24232D22;
+			--background_body_darkmode_color_88: #24232D88;
+
+		/* Header */
+			--header_border_color: var(--color_gris_tres_clair);
+			--header_darkmode_border_color: var(--color_gris_peu_fonce);
+			/* Image */
+				--header_image: url("[[header_image]]");
+				--header_linear_gradient: ;
+			/* Titre du site */
+				--txt_site_title_font_family: "Megrim", cursive;
+				--txt_site_title_font_size: 36px;
+				--txt_site_title_text_color: var(--txt_body_text_color);
+			/* Recherche */
+				--header_search_text_color: #000;
+				--header_search_icon_color: #000;
+				--header_search_darkmode_text_color: #fff;
+				--header_search_darkmode_icon_color: #fff;
+
+		/* Menu principal */
+			--main_menu_border_color: var(--header_border_color);
+			--main_menu_darkmode_border_color: var(--header_darkmode_border_color);
+			--main_menu_item_separator_color: var(--header_border_color);
+			--main_menu_darkmode_item_separator_color: var(--header_darkmode_border_color);
+			--main_menu_item_hover_default_color: var(--main_color_theme);
+			--main_menu_item_text_hover_color: #FFFFFF;
+			--menu_main_item_font_size: 11.5px;
+			--menu_main_item_icon_font_size: 18px;
+
+		/* Corps principal (main) */
+			--main_background_color: #F0F0FF;
+			--main_background_gradient: linear-gradient(135deg, #FFF, #F0F0FF);
+			--main_background_darkmode_color: var(--main_darkmode_color);
+			--main_background_darkmode_gradient: linear-gradient(135deg, #1A1922, #15141C);
+			/* Contenu */
+				--main_content_background_color: #F0F0FF;
+				--main_content_background_gradient: linear-gradient(135deg, #FFF, #F0F0FF);
+			/* Titre des pages */
+				--txt_page_title_font_family: "Megrim", cursive;
+				--txt_page_title_font_size: 28px;
+				--txt_page_title_font_size_mobile: 20px;
+				--txt_page_title_text_color: #FFFFFF;
+				--main_title_page_color_default: var(--main_color_theme);
+				--main_title_page_color_tags: #D2D2DC;
+				--main_title_option_text_color: #D2D2DC;
+			/* Contenu */
+				/* Cartes */
+					--main_content_card_img_color: var(--main_color_theme);
+					--main_content_card_img_gradient: linear-gradient(90deg, #00FF9000 60%,#00FF90), linear-gradient(270deg, #FF009000 60%,#FF0090), linear-gradient(0deg, #9000FF00 20%,#9000FF), linear-gradient(180deg, #0090FF00 20%,#0090FF);
+					--main_content_card_title_font_size: 20px;
+					--main_content_card_excerpt_font_size: 11.5px;
+					--main_content_card_detail_font_size: 11.5px;
+					--main_content_card_detail_text_color: #808092;
+					--main_content_card_tags_font_size: 11.5px;
+				/* Tags */
+					--main_content_tags_category_text_color: var(--main_color_theme);
+					--main_content_tags_category_border_color: var(--main_content_tags_category_text_color);
+					--main_content_tags_category_hover_background_color: var(--main_content_tags_category_text_color);
+					--main_content_tags_tag_text_color: var(--color_gris);
+					--main_content_tags_tag_border_color: var(--main_content_tags_tag_text_color);
+					--main_content_tags_tag_hover_background_color: var(--main_content_tags_tag_text_color);
+					--main_content_tags_hover_text_color: #FFFFFF;
+				/* Métadonnées article */
+					--main_content_meta_img_gradient: linear-gradient(90deg, #ffffffcf, #ffffff7e), linear-gradient(90deg, #fff, #FF0090, #00FF90,#0090FF, #9000FF),
+					--main_content_meta_darkmode_img_gradient: linear-gradient(90deg, #24232Dcf, #ffffff7e), linear-gradient(90deg, #24232D, #FF0090, #00FF90,#0090FF, #9000FF);
+					--main_content_meta_category_font_size: 16px;
+					--main_content_meta_tags_font_size: 10px;
+				/* Titre des paragraphes */
+					--txt_content_title_font_family: var(--txt_body_font_family);
+					--txt_content_title_text_color: var(--txt_body_text_color);
+					--txt_content_title_text_darkmode_color: var(--txt_body_darkmode_text_color);
+				/* Texte des paragraphes */
+					--txt_content_font_family: var(--txt_body_font_family);
+					--txt_content_text_color: var(--txt_body_text_color);
+					--txt_content_text_darkmode_color: var(--txt_body_darkmode_text_color);
+				/* Code */
+					--txt_code_font_family: VictorMono, "Source Code Pro", "Liberation Mono", "Courier New", Courier, monospace;
+					--txt_code_font_size: 14px;
+					--txt_code_line_height: 22px;
+				/* Table of content */
+					--txt_table_of_content_item_font_size: 15px;
+					--txt_table_of_content_item_font_size_mobile: 17px;
+					--txt_table_of_content_item_font_size_factor: 0.95em;
+				/* Formulaire */
+					--form_valid_color: #00ce68;
+					--form_invalid_color: var(--color_orange);
+					--form_failed_color: #ff6856;
+				/* Footer */
+					--main_footer_background_color: #24232D;
+					--main_footer_title_color: #FFFFFF;
+					--main_footer_text_color: #D2D2DC;
+					--main_footer_copyright_color: #808092;
+					--main_footer_copyright_font_size: 0.85em;
+				/* Progress Bar */
+					--progress_bar_font_size: 12px;
+
+	/* z-index des éléments */
+
+}
+
+

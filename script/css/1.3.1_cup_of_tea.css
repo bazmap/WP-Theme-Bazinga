@@ -1,0 +1,135 @@
+/* Animation Thé */
+.tea_time_animation_cup .cup {
+	position: absolute;
+
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+
+	height: 65%;
+	width: 55%;
+
+	background-color: #fff;
+
+	border-top-left-radius: 5%;
+	border-top-right-radius: 5%;
+	border-bottom-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+
+	transition: all 0.2s;
+}
+
+
+
+.tea_time_animation_cup .cup .handle {
+	position: absolute;
+
+	top: 45%;
+	right: -30%;
+	transform: translateY(-50%);
+
+	height: 60%;
+	width: 72%;
+	box-sizing: border-box;
+
+	background-color: transparent;
+
+	border-radius: 20%;
+
+	overflow: hidden;
+}
+
+.tea_time_animation_cup .cup .handle:before {
+	content: '';
+	display: block;
+	position: relative;
+
+	width: 60%;
+	height: 60%;
+
+	top: 20%;
+	left: 22%;
+
+	box-shadow: 0 0 0 99999px rgb(255, 255, 255);
+
+	border-radius: 20%;
+
+	transition: all 0.2s;
+}
+
+
+
+.tea_time_animation_cup .vapor {
+	display: flex;
+	justify-content: space-evenly;
+
+	position: absolute;
+
+	top: 35%;
+	left: 50%;
+	transform: translateX(-50%);
+
+	height: 30%;
+	width: 55%;
+
+	padding: 0 10%;
+}
+
+.tea_time_animation_cup .vapor .cloud {
+	height: 100%;
+	width: 100%;
+
+	background-color: #fff;
+
+	opacity: 0;
+
+	animation-timing-function: linear;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: cup_animation;
+}
+
+.tea_time_animation_cup .vapor .cloud:nth-child(1),
+.tea_time_animation_cup .vapor .cloud:nth-child(7) {
+	animation-delay: 0.2s;
+}
+
+.tea_time_animation_cup .vapor .cloud:nth-child(2) {
+	animation-delay: 1s;
+}
+
+.tea_time_animation_cup .vapor .cloud:nth-child(3),
+.tea_time_animation_cup .vapor .cloud:nth-child(8) {
+	animation-delay: 0.9s;
+}
+
+.tea_time_animation_cup .vapor .cloud:nth-child(4) {
+	animation-delay: 1.7s;
+}
+
+.tea_time_animation_cup .vapor .cloud:nth-child(5),
+.tea_time_animation_cup .vapor .cloud:nth-child(9) {
+	animation-delay: 1.2s;
+}
+
+.tea_time_animation_cup .vapor .cloud:nth-child(6) {
+	animation-delay: 0.7s;
+}
+
+.tea_time_animation_cup .vapor .cloud:nth-child(10) {
+	animation-delay: 0.6s;
+}
+
+
+@keyframes cup_animation {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+		filter: blur(6px);
+	}
+	100% {
+		transform: translateY(-160%);
+		opacity: 0;
+		filter: blur(10px);
+	}
+}

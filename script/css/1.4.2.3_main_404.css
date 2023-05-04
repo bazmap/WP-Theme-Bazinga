@@ -1,0 +1,12 @@
+.content.error_404 .text p:first-child {
+	margin-top: 0px;
+}
+
+.content.error_404 .text img {
+	box-shadow: none;
+	border: none;
+}
+
+.content.error_404 .text img:hover {
+	border: none;
+}
